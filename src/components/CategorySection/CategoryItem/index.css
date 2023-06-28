@@ -1,0 +1,23 @@
+.CategoryItem {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 0 8px #ffffffde;
+  cursor: pointer;
+}
+
+.CategoryItem img {
+  width: 100%;
+  height: 90%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+
+.CategoryItem__Name {
+  height: 10%;
+}
