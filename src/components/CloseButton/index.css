@@ -1,0 +1,18 @@
+.CloseButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  transition: all 0.35s;
+  cursor: pointer;
+}
+
+.CloseButton:active {
+  transform: scale(2);
+}
