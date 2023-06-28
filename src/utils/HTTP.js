@@ -1,4 +1,4 @@
-const BASE_URL = "https://botw-compendium.herokuapp.com/api/v2/category/";
+const BASE_URL = "https://botw-compendium.herokuapp.com/api/v2/";
 
 export const GET = async (endpoint) => {
   const res = await fetch(BASE_URL + endpoint);
