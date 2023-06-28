@@ -5,6 +5,23 @@
   align-items: center;
 }
 
+.ItemPage > * {
+  padding: 10px;
+}
+
+.ItemPage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 0;
+}
+
+.ItemPage__Text {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .ItemPage__Text--description {
   text-align: justify;
 }
