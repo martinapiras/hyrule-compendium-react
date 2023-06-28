@@ -22,7 +22,7 @@ const CategorySection = ({ section, setSection }) => {
       {section !== "creatures" && (
         <ul className="CategorySection__List">
           {list.map((item) => (
-            <CategoryItem data={item} key={item.id} />
+            <CategoryItem data={item} setSection={setSection} key={item.id} />
           ))}
         </ul>
       )}

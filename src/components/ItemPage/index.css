@@ -1,0 +1,10 @@
+.ItemPage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.ItemPage__Text--description {
+  text-align: justify;
+}
