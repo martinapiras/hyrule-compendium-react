@@ -1,7 +1,6 @@
 import { useState } from "react";
 import HomePage from "./components/HomePage";
 import CategorySection from "./components/CategorySection";
-import ItemPage from "./components/ItemPage/";
 import "./App.css";
 
 function App() {
