@@ -24,12 +24,37 @@ const CategorySection = ({ section, setSection }) => {
             {section.charAt(0).toUpperCase()}
             {section.slice(1)}
           </h2>
-          {section !== "creatures" && (
+          {section !== "creatures" ? (
             <ul className="CategorySection__List">
               {list.map((item) => (
                 <CategoryItem data={item} setModal={setModal} key={item.id} />
               ))}
             </ul>
+          ) : (
+            <>
+              <h3 className="CategorySection__Subtitle">Food</h3>
+              <ul className="CategorySection__List">
+                {list.food &&
+                  list.food.map((item) => (
+                    <CategoryItem
+                      data={item}
+                      setModal={setModal}
+                      key={item.id}
+                    />
+                  ))}
+              </ul>
+              <h3 className="CategorySection__Subtitle">Non-food</h3>
+              <ul className="CategorySection__List">
+                {list.non_food &&
+                  list.non_food.map((item) => (
+                    <CategoryItem
+                      data={item}
+                      setModal={setModal}
+                      key={item.id}
+                    />
+                  ))}
+              </ul>
+            </>
           )}
         </div>
       )}
