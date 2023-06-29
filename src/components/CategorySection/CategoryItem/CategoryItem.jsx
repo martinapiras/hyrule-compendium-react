@@ -8,9 +8,7 @@ const CategoryItem = ({ data, setModal }) => {
   const entryName = useRef(data.name);
 
   const onHandleClick = () => {
-    GET("entry/" + entryName.current).then((data) => {
-      setModal(data.data);
-    });
+    GET("entry/" + entryName.current).then((data) => setModal(data.data));
   };
 
   return (

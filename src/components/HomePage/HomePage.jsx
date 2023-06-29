@@ -6,7 +6,7 @@ const HomePage = ({ setSection }) => {
       <ul className="HomePage__Categories">
         <li
           className="HomePage__Categories--category"
-          onClick={() => setSection("")}
+          onClick={() => setSection("creatures")}
         >
           Creatures
         </li>
