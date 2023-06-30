@@ -19,10 +19,17 @@
 
 .ItemPage__Text {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   gap: 10px;
 }
 
 .ItemPage__Text--description {
   text-align: justify;
+}
+
+.ItemPage__Text--locations,
+.ItemPage__Text--drops {
+  padding-left: 40px;
 }
